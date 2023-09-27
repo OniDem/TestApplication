@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApplication.TaskList"
+             Title="TaskList"
+             BackgroundColor="Coral">
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame
+                Padding="10"
+                HorizontalOptions="Center"
+                Margin="10">
+                <FlexLayout
+                    JustifyContent="SpaceBetween"
+                    AlignContent="Center">
+                    <Label
+                        VerticalOptions="Center"
+                        Text="Хотите добавить задачу?" />
+                    <Button
+                        Text="Создать"
+                        VerticalOptions="Center"
+                        BackgroundColor="Green"
+                        TextColor="#fff"
+                        x:Name="ToNextPage"
+                        Clicked="ToNextPage_Clicked"/>
+                </FlexLayout>
+            </Frame>
+            <StackLayout
+                Margin="15"
+                WidthRequest="390"
+                HorizontalOptions="Center"
+                BackgroundColor="Yellow"
+                Padding="15">
+                <Image
+                    Source="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/274px-A_small_cup_of_coffee.JPG" />
+                <Label
+                    Text="Чашка кофе"
+                    TextColor="Red"
+                    FontSize="Large"
+                    FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout
+                Margin="15"
+                WidthRequest="390"
+                HorizontalOptions="Center"
+                BackgroundColor="#222"
+                Padding="15">
+                <Image
+                    Source="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/274px-A_small_cup_of_coffee.JPG" />
+                <Label
+                    TextColor="#fff"
+                    Text="Чашка кофе"
+                    FontSize="Large"
+                    FontAttributes="Bold" />
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
